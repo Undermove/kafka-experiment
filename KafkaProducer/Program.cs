@@ -15,6 +15,7 @@ namespace KafkaProducer
                 SecurityProtocol = SecurityProtocol.Plaintext,
                 ClientId = Dns.GetHostName()
             };
+            // TODO: https://hub.docker.com/r/bitnami/kafka/
             
             using var producer = new ProducerBuilder<Null, string>(config).Build();
 
