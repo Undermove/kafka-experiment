@@ -15,13 +15,11 @@ services:
     depends_on:
       - zookeeper
     ports:
-      - "9092:9093"
+      - "9092:9092"
     environment:
       ADVERTISED_HOST: 127.0.0.1
-      ADVERTISED_PORT: 9093
+      ADVERTISED_PORT: 9092
       KAFKA_ZOOKEEPER_CONNECT: "zookeeper:2181"
-      KAFKA_LISTENERS: INT://kafka:9092,EXT://0.0.0.0:9093
-      KAFKA_ADVERTISED_LISTENERS: INT://kafka:9092,EXT://localhost:9093
     networks:
       - back-tier
 

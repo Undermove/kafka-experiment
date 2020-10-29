@@ -11,7 +11,7 @@ namespace KafkaProducer
         {
             var config = new ProducerConfig
             {
-                BootstrapServers = "localhost:9093",
+                BootstrapServers = "localhost:9092",
                 ClientId = Dns.GetHostName()
             };
             
