@@ -38,7 +38,7 @@ namespace KafkaProducer
 						return;
 					}
 
-					Console.WriteLine($"Offset: {report.Offset}");
+					//Console.WriteLine($"Offset: {report.Offset}");
 				});
 
 			producer.Flush();
